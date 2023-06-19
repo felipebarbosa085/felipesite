@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face {
+font-family: 'FonteLogo';
+src: url("../_fonts/bubblegum-sans-regular.otf")
+}
+div#interface {
+position: relative; /* Transforma a div em um container */
+background-color: #fff; /* branco*/
+width: 900px;
+margin: -23px auto 0px auto;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+padding: 10px; /* aumentar o espaçamento interno */
+}
+
+header#cabecalho {
+border-bottom: 1px #606060 solid;
+height: 150px;
+background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+hgroup#cabecalho-noticia-principal h1.especial{
+font-family: 'FonteLogo', sans-serif;
+font-size:20pt;
+color: #606060;
+margin:0px;
+
+}
+
+header#cabecalho h1{
+font-family: 'FonteLogo';
+color: #606060;
+font-size: 25px;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+padding: 0px;
+margin_bottom: 0px;
+}
+header#cabecalho h2{
+font-family: 'Titillium Web', sans-serif;
+color: #888888;/*cinza claro*/
+padding: 0px;
+margin-top: 0px;
+}
+
+nav#menu{
+display: block;
+}
+
+nav#menu ul {
+list-style: none; /*remover os marcadores da lista*/
+text-transform :uppercase; /* converter para maíusculas*/
+position: absolute;/* para que o menu possa ser colocado no topo é preciso virar absoluto*/
+top: -4px;
+right: 25px;
+}
+
+nav#menu li {
+display: inline-block; /* colocar os itens lado a lado*/
+background-color: #ddd; /* cor de fundo-cinza*/
+padding: 10px; /* aumentar o espaçamento interno da caixa cinza*/
+margin: 2px;/*aumentar o espaçamento entre as linhas extrenas*/
+transition: background-color 1s;
+}
+
+nav#menu li:hover{
+background-color: #606060;/* cinza escuro */
+}
+
+nav#menu h1 {
+display: none;/* ocultar a tag h1 que está em nav id menu*/
+}
+
+nav#menu a {
+color: #000;/* preto */
+text-decoration: none;/* remove o sublinhado do link*/
+}
+/* AO PASSAR O MOUSE SOBRE O LINK (tag a) */
+nav#menu a:hover {
+color: #fff; /*branco*/
+text-decoration: underline; /* sublinhado */
+}
+
+img#icone {
+position: absolute;
+left: 750px;
+top: 95px;
+}
+
+footer#rodape {
+clear: both;
+border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+text-align: center;
+}
+
+hgroup#cabecalho-noticia-principal h2{
+font-size: 13pt;
+color: #cecece; /*cinza muito claro*/
+background-color: #fff; /*branco*/
+margin: 0px;
+margin-left: 0px;
+margin-top: 7px;
+}
+
+hgroup#cabecalho-noticia-principal h3{
+font-size: 10pt;
+color: #606060;
+margin: 10px;
+}
+.direita {
+text-align: right;
+}
+
+form{
+    width: 500px;
+    margin: auto; /*centralizar*/
+}
+input,textarea{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255,255,255, 0.7);
+}
+input:hover,textarea:hover{
+    background-color: #ddd;
+}
+legend{
+    color: #888;
+    font-weight: bolder;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+}
+
+
+fieldset#idsexo{
+    width: 150px;
+
+}
+fieldset#idusuario{
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+
+}
+fieldset#idendereco{
+    background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+
+fieldset#idmensagem{
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+fieldset#idpedido{
+    background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+}
